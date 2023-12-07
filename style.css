@@ -1,29 +1,18 @@
 * {
-    ---primary: rgb(5, 255, 5);
-    ---secondary: rgb(30, 30, 30);
+    ---primary: rgb(0, 255, 0);
+    ---background2: rgb(30, 30, 30);
     ---background: rgb(5, 5, 5);
     color: var(---primary);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+    line-height: 150%;
 }
 body {
     background-color: var(---background);
 }
 header {
-    background-image: url("assets/sty_background.png");
-    background-size: 50%;
-    background-position: top;
-    background-size: cover;
-    
-    height: 400px;
-    position: relative;
+    text-align-last: center;
 }
-button {
-    font-size: 32px;
-    background-color: var(---secondary);
-    border: 2px solid var(---primary);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+.projects {
+    list-style: "/";
 }
