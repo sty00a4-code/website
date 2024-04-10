@@ -1,18 +1,60 @@
 * {
-    ---primary: rgb(0, 255, 0);
-    ---background2: rgb(30, 30, 30);
+    ---primary: rgb(255, 255, 255);
+    ---second: rgb(5, 255, 5);
+    ---third: rgb(30, 173, 255);
+    ---fourth: rgb(255, 30, 30);
+    ---comment: rgb(71, 71, 71);
     ---background: rgb(5, 5, 5);
     color: var(---primary);
-    font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 150%;
 }
 body {
     background-color: var(---background);
+    padding: 5px;
 }
 header {
     text-align-last: center;
 }
 
+a {
+    color: var(---second);
+    font-style: normal;
+}
+strong {
+    color: var(---fourth);
+    font-style: normal;
+}
+em {
+    color: var(---third);
+    font-style: normal;
+}
+ul {
+    list-style: "";
+}
+img {
+    border-width: 3px;
+    border-color: var(---second);
+    border-style: solid;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.part {
+    margin-bottom: 5vh;
+}
 .projects {
     list-style: "/";
+}
+.comment {
+    display: inline;
+    color: var(---comment);
+    font-style: italic;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
